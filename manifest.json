@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Cleanup — Inbox Organizer",
+  "short_name": "Gmail Cleanup",
+  "version": "1.0.0",
+  "description": "Scan your Gmail inbox, group emails by sender & category, then archive or trash them in bulk. Multi-account support.",
+  "icons": {
+    "16":  "icons/icon16.png",
+    "48":  "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "identity",
+    "identity.email",
+    "storage"
+  ],
+  "oauth2": {
+    "client_id": "755023373100-8n45h9n4quolkj3m44qgbgjtrge62viq.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.metadata",
+      "https://www.googleapis.com/auth/gmail.modify",
+      "https://www.googleapis.com/auth/gmail.settings.basic",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  },
+  "background": {
+    "service_worker": "src/background/index.ts"
+  },
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_title": "Gmail Cleanup",
+    "default_icon": {
+      "16":  "icons/icon16.png",
+      "48":  "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "src/options/index.html",
+    "open_in_tab": true
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self'; connect-src https://gmail.googleapis.com https://www.googleapis.com https://accounts.google.com;"
+  }
+}

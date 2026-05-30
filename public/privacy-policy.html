@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Gmail Cleanup</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 60px auto; padding: 0 24px; color: #1f2937; line-height: 1.7; }
+    h1   { font-size: 28px; font-weight: 800; color: #1e1b4b; margin-bottom: 6px; }
+    h2   { font-size: 18px; font-weight: 700; color: #312e81; margin-top: 36px; }
+    p, li { font-size: 15px; color: #374151; }
+    ul   { padding-left: 20px; }
+    .updated { font-size: 13px; color: #9ca3af; margin-bottom: 32px; }
+    a    { color: #6366f1; }
+    hr   { border: none; border-top: 1px solid #e5e7eb; margin: 40px 0; }
+    .badge { display:inline-block; background:#eef2ff; color:#4f46e5; border-radius:6px; padding:2px 10px; font-size:13px; font-weight:700; }
+  </style>
+</head>
+<body>
+
+<h1>🧹 Gmail Cleanup — Privacy Policy</h1>
+<p class="updated">Last updated: May 2025</p>
+
+<p>
+  Gmail Cleanup ("the Extension", "we", "our") is a Chrome extension that helps you
+  identify, organise and bulk-clean unwanted email from your Gmail inbox.
+  This policy explains what data we access, how we use it, and what we
+  <strong>never</strong> do with it.
+</p>
+
+<h2>1. What data does the Extension access?</h2>
+<p>The Extension requests the following Google OAuth scopes:</p>
+<ul>
+  <li><span class="badge">gmail.metadata</span> — to read sender addresses, subject lines, and label data (never full email bodies).</li>
+  <li><span class="badge">gmail.modify</span> — to archive or trash emails you explicitly select inside the Extension.</li>
+  <li><span class="badge">gmail.settings.basic</span> — to create Gmail filters when you choose the "Create filter" action.</li>
+  <li><span class="badge">userinfo.email</span> — to identify which Google account is connected.</li>
+</ul>
+
+<h2>2. How is your data used?</h2>
+<ul>
+  <li>Email metadata (sender, date, labels) is processed <strong>locally in your browser</strong> to group senders and display the dashboard.</li>
+  <li>No email content, subject lines, or metadata is ever transmitted to any external server operated by us.</li>
+  <li>Your protected-sender list and preferences are stored in <code>chrome.storage.local</code> — on your own device, never uploaded.</li>
+</ul>
+
+<h2>3. Data we do NOT collect</h2>
+<ul>
+  <li>We do <strong>not</strong> collect, store, or transmit your email content.</li>
+  <li>We do <strong>not</strong> have any backend server or database.</li>
+  <li>We do <strong>not</strong> sell, share, or monetise any of your data.</li>
+  <li>We do <strong>not</strong> use analytics or crash-reporting services.</li>
+  <li>We do <strong>not</strong> use advertising networks.</li>
+</ul>
+
+<h2>4. Third-party services</h2>
+<p>
+  The Extension communicates only with official Google APIs:
+</p>
+<ul>
+  <li><a href="https://developers.google.com/gmail/api" target="_blank">Gmail API</a> (gmail.googleapis.com)</li>
+  <li><a href="https://developers.google.com/identity" target="_blank">Google Identity</a> (accounts.google.com)</li>
+  <li><a href="https://developers.google.com/identity/protocols/oauth2/user-data-policy" target="_blank">Google OAuth</a> (www.googleapis.com/oauth2)</li>
+</ul>
+<p>These communications are governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+<h2>5. OAuth tokens</h2>
+<p>
+  OAuth access tokens are managed by Chrome's built-in
+  <code>chrome.identity</code> API and stored only in Chrome's secure token
+  cache on your device. They are never written to disk by the Extension or
+  transmitted to any third party.
+</p>
+
+<h2>6. Children's privacy</h2>
+<p>
+  The Extension is not directed at children under 13 and we do not knowingly
+  process data from children.
+</p>
+
+<h2>7. Changes to this policy</h2>
+<p>
+  If we make material changes to this policy, we will update the "Last updated"
+  date above and release a new version of the Extension on the Chrome Web Store.
+</p>
+
+<h2>8. Contact</h2>
+<p>
+  Questions about this policy? Open an issue on our
+  <a href="https://github.com/satyavenkat928/gmail-cleanup-extension" target="_blank">GitHub repository</a>
+  or email <a href="mailto:satyavenkat928@gmail.com">satyavenkat928@gmail.com</a>.
+</p>
+
+<hr />
+<p style="font-size:13px; color:#9ca3af; text-align:center;">
+  Gmail Cleanup is an independent extension and is not affiliated with or endorsed by Google LLC.
+</p>
+
+</body>
+</html>

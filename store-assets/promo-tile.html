@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:440px; height:280px; overflow:hidden; font-family:system-ui,-apple-system,sans-serif;
+  background:linear-gradient(135deg,#0f0f2e 0%,#1a1a4e 50%,#0d1b3e 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; }
+@keyframes pulse { 0%,100%{transform:scale(1);opacity:.5} 50%{transform:scale(1.2);opacity:.1} }
+.ring { position:absolute;inset:0;border-radius:50%;border:2px solid #6366f166;animation:pulse 2.4s ease-out infinite; }
+.r2 { animation-delay:.8s; } .r3 { animation-delay:1.6s; }
+</style>
+</head>
+<body>
+<!-- Decorative dots -->
+<div style="position:absolute;top:20px;right:30px;width:6px;height:6px;border-radius:50%;background:#6366f166"></div>
+<div style="position:absolute;top:40px;right:60px;width:4px;height:4px;border-radius:50%;background:#8b5cf644"></div>
+<div style="position:absolute;bottom:30px;left:20px;width:8px;height:8px;border-radius:50%;background:#6366f144"></div>
+<div style="position:absolute;top:50px;left:50px;width:5px;height:5px;border-radius:50%;background:#a78bfa33"></div>
+
+<!-- Icon radar -->
+<div style="position:relative;width:72px;height:72px;margin-bottom:18px">
+  <div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div>
+  <div style="position:absolute;inset:10px;border-radius:50%;background:linear-gradient(135deg,#6366f1,#8b5cf6);box-shadow:0 0 24px #6366f155;display:flex;align-items:center;justify-content:center;font-size:22px">📧</div>
+</div>
+
+<h1 style="color:white;font-size:22px;font-weight:900;letter-spacing:-.5px;margin-bottom:6px">Gmail Cleanup</h1>
+<p style="color:rgba(255,255,255,.5);font-size:12.5px;margin-bottom:20px;text-align:center;max-width:280px;line-height:1.5">
+  Scan · Group by category · Archive or trash in bulk
+</p>
+
+<!-- Feature pills -->
+<div style="display:flex;gap:7px;flex-wrap:wrap;justify-content:center;max-width:380px">
+  <span style="background:rgba(99,102,241,.2);border:1px solid rgba(99,102,241,.4);border-radius:99px;padding:4px 12px;color:#a5b4fc;font-size:11px;font-weight:700">💼 Jobs</span>
+  <span style="background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.35);border-radius:99px;padding:4px 12px;color:#fcd34d;font-size:11px;font-weight:700">🛒 Shopping</span>
+  <span style="background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.35);border-radius:99px;padding:4px 12px;color:#93c5fd;font-size:11px;font-weight:700">📱 Social</span>
+  <span style="background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.35);border-radius:99px;padding:4px 12px;color:#6ee7b7;font-size:11px;font-weight:700">💰 Finance</span>
+  <span style="background:rgba(236,72,153,.15);border:1px solid rgba(236,72,153,.35);border-radius:99px;padding:4px 12px;color:#f9a8d4;font-size:11px;font-weight:700">🎬 Entertainment</span>
+  <span style="background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.35);border-radius:99px;padding:4px 12px;color:#c4b5fd;font-size:11px;font-weight:700">🛡️ Protect senders</span>
+</div>
+</body></html>

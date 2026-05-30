@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1280px; height:800px; overflow:hidden; font-family:system-ui,-apple-system,sans-serif; background:#f5f5ff; }
+.tag { display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:99px;font-size:11px;font-weight:700;white-space:nowrap }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div style="background:linear-gradient(135deg,#1e1b4b,#312e81);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 20px rgba(30,27,75,.3)">
+  <div style="display:flex;align-items:center;gap:12px">
+    <span style="font-size:22px">🧹</span>
+    <div>
+      <div style="color:white;font-weight:800;font-size:17px">Gmail Cleanup</div>
+      <div style="color:rgba(255,255,255,.45);font-size:11px">2 accounts scanned</div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px">
+    <div style="background:rgba(134,239,172,.15);border:1px solid rgba(134,239,172,.35);border-radius:99px;padding:6px 14px;color:#86efac;font-size:13px;font-weight:600">🎉 1,847 cleaned!</div>
+    <button style="padding:8px 18px;background:rgba(255,255,255,.1);color:white;border:none;border-radius:8px;font-weight:600;font-size:13px;cursor:pointer">← Switch accounts</button>
+    <button style="padding:8px 20px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:white;border:none;border-radius:8px;font-weight:700;font-size:13px;cursor:pointer;box-shadow:0 4px 16px rgba(99,102,241,.35)">🔄 Re-scan</button>
+  </div>
+</div>
+
+<div style="padding:20px 36px">
+  <!-- Account filter -->
+  <div style="display:flex;gap:8px;margin-bottom:16px">
+    <button style="padding:6px 14px;background:white;color:#374151;border:1.5px solid #e5e7eb;border-radius:99px;font-size:13px;font-weight:600;cursor:pointer">All accounts</button>
+    <button style="display:flex;align-items:center;gap:7px;padding:5px 14px 5px 7px;background:#6366f1;color:white;border:1.5px solid #6366f1;border-radius:99px;font-size:13px;font-weight:600;cursor:pointer">
+      <div style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.3);color:white;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800">S</div>
+      satyavenkat928@gmail.com <span style="opacity:.65">(142)</span>
+    </button>
+    <button style="display:flex;align-items:center;gap:7px;padding:5px 14px 5px 7px;background:white;color:#374151;border:1.5px solid #e5e7eb;border-radius:99px;font-size:13px;font-weight:600;cursor:pointer">
+      <div style="width:22px;height:22px;border-radius:50%;background:#8b5cf6;color:white;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800">W</div>
+      work@example.com <span style="opacity:.65">(38)</span>
+    </button>
+  </div>
+
+  <!-- Category tabs -->
+  <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px">
+    <button style="padding:6px 13px;border-radius:99px;font-size:12px;font-weight:700;border:1.5px solid #1e1b4b;background:#1e1b4b;color:white">🗂 All <span style="opacity:.6;font-weight:500">(180)</span></button>
+    <div style="display:flex;align-items:center;gap:2px">
+      <button style="padding:6px 13px;border-radius:99px 0 0 99px;font-size:12px;font-weight:700;border:1.5px solid #8b5cf6;border-right:none;background:#f5f3ff;color:#8b5cf6">💼 Jobs <span style="opacity:.6;font-weight:500">(47)</span></button>
+      <button style="padding:6px 9px;border-radius:0 99px 99px 0;font-size:11px;border:1.5px solid #e5e7eb;background:white;color:#9ca3af;cursor:pointer">🛡️</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:2px">
+      <button style="padding:6px 13px;border-radius:99px 0 0 99px;font-size:12px;font-weight:700;border:1.5px solid #f59e0b;border-right:none;background:#fffbeb;color:#d97706">🛒 Shopping <span style="opacity:.6;font-weight:500">(39)</span></button>
+      <button style="padding:6px 9px;border-radius:0 99px 99px 0;font-size:11px;border:1.5px solid #e5e7eb;background:white;color:#9ca3af;cursor:pointer">🛡️</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:2px">
+      <button style="padding:6px 13px;border-radius:99px 0 0 99px;font-size:12px;font-weight:700;border:1.5px solid #3b82f6;border-right:none;background:#eff6ff;color:#2563eb">📱 Social <span style="opacity:.6;font-weight:500">(28)</span></button>
+      <button style="padding:6px 9px;border-radius:0 99px 99px 0;font-size:11px;border:1.5px solid #6366f1;background:#eef2ff;color:#6366f1;cursor:pointer">🛡️</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:2px">
+      <button style="padding:6px 13px;border-radius:99px 0 0 99px;font-size:12px;font-weight:700;border:1.5px solid #10b981;border-right:none;background:#ecfdf5;color:#059669">💰 Finance <span style="opacity:.6;font-weight:500">(22)</span></button>
+      <button style="padding:6px 9px;border-radius:0 99px 99px 0;font-size:11px;border:1.5px solid #e5e7eb;background:white;color:#9ca3af;cursor:pointer">🛡️</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:2px">
+      <button style="padding:6px 13px;border-radius:99px 0 0 99px;font-size:12px;font-weight:700;border:1.5px solid #ec4899;border-right:none;background:#fdf2f8;color:#db2777">🎬 Entertainment <span style="opacity:.6;font-weight:500">(19)</span></button>
+      <button style="padding:6px 9px;border-radius:0 99px 99px 0;font-size:11px;border:1.5px solid #e5e7eb;background:white;color:#9ca3af;cursor:pointer">🛡️</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:2px">
+      <button style="padding:6px 13px;border-radius:99px 0 0 99px;font-size:12px;font-weight:700;border:1.5px solid #6366f1;border-right:none;background:#eef2ff;color:#4f46e5">🔔 Notifications <span style="opacity:.6;font-weight:500">(14)</span></button>
+      <button style="padding:6px 9px;border-radius:0 99px 99px 0;font-size:11px;border:1.5px solid #e5e7eb;background:white;color:#9ca3af;cursor:pointer">🛡️</button>
+    </div>
+  </div>
+
+  <!-- Stat pills -->
+  <div style="display:flex;gap:12px;margin-bottom:16px">
+    <div style="flex:1;background:white;border-radius:12px;padding:14px 18px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-top:3px solid #6366f1">
+      <div style="font-size:18px;margin-bottom:3px">📨</div><div style="font-size:22px;font-weight:800;color:#6366f1">17,758</div><div style="font-size:11px;color:#9ca3af;margin-top:1px">Emails scanned</div>
+    </div>
+    <div style="flex:1;background:white;border-radius:12px;padding:14px 18px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-top:3px solid #8b5cf6">
+      <div style="font-size:18px;margin-bottom:3px">👤</div><div style="font-size:22px;font-weight:800;color:#8b5cf6">180</div><div style="font-size:11px;color:#9ca3af;margin-top:1px">Senders</div>
+    </div>
+    <div style="flex:1;background:white;border-radius:12px;padding:14px 18px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-top:3px solid #ec4899">
+      <div style="font-size:18px;margin-bottom:3px">🗑️</div><div style="font-size:22px;font-weight:800;color:#ec4899">12,441</div><div style="font-size:11px;color:#9ca3af;margin-top:1px">Emails in view</div>
+    </div>
+    <div style="flex:1;background:white;border-radius:12px;padding:14px 18px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-top:3px solid #ef4444">
+      <div style="font-size:18px;margin-bottom:3px">🔥</div><div style="font-size:22px;font-weight:800;color:#ef4444">93</div><div style="font-size:11px;color:#9ca3af;margin-top:1px">Likely junk</div>
+    </div>
+    <div style="flex:1;background:white;border-radius:12px;padding:14px 18px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-top:3px solid #6366f1">
+      <div style="font-size:18px;margin-bottom:3px">🛡️</div><div style="font-size:22px;font-weight:800;color:#6366f1">5</div><div style="font-size:11px;color:#9ca3af;margin-top:1px">Protected</div>
+    </div>
+  </div>
+
+  <!-- Bulk bar -->
+  <div style="background:white;border:1px solid #e0e7ff;border-radius:12px;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 20px rgba(99,102,241,.15);margin-bottom:10px">
+    <div style="font-weight:700;color:#1e1b4b;font-size:13px">4 senders &nbsp;·&nbsp; <span style="color:#6366f1">2,341 emails</span> selected</div>
+    <div style="display:flex;gap:8px">
+      <button style="padding:7px 16px;background:#ede9fe;color:#5b21b6;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer">📁 Archive All</button>
+      <button style="padding:7px 16px;background:#fef2f2;color:#dc2626;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer">🗑️ Trash All</button>
+    </div>
+  </div>
+
+  <!-- Sender rows -->
+  <div style="display:flex;flex-direction:column;gap:5px">
+    <!-- Header -->
+    <div style="display:grid;grid-template-columns:36px 1fr 70px 110px 80px 70px 34px 150px;gap:8px;padding:5px 16px;color:#9ca3af;font-size:10px;text-transform:uppercase;letter-spacing:.8px;font-weight:600">
+      <div></div><div>Sender</div><div>Emails</div><div>Category</div><div>Account</div><div>Junk</div><div>🛡️</div><div>Actions</div>
+    </div>
+    <!-- Row 1 - selected -->
+    <div style="display:grid;grid-template-columns:36px 1fr 70px 110px 80px 70px 34px 150px;gap:8px;align-items:center;background:#f5f3ff;border:1.5px solid #a5b4fc;border-radius:10px;padding:10px 16px">
+      <div><input type="checkbox" checked style="accent-color:#6366f1;cursor:pointer"/></div>
+      <div><div style="font-weight:700;color:#1e1b4b;font-size:13px">LinkedIn Job Alerts</div><div style="color:#9ca3af;font-size:11px">jobalerts-noreply@linkedin.com</div></div>
+      <div style="font-weight:800;font-size:15px;color:#374151">483</div>
+      <div><span class="tag" style="background:#f5f3ff;color:#8b5cf6;border:1px solid #8b5cf633">💼 Jobs</span></div>
+      <div><span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:700;background:#6366f118;color:#6366f1;border:1px solid #6366f144;max-width:84px;overflow:hidden"><span style="width:14px;height:14px;border-radius:50%;background:#6366f1;color:white;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:900;flex-shrink:0">S</span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">satyavenkat</span></span></div>
+      <div><span class="tag" style="background:#fef2f2;color:#dc2626;border:1px solid #fecaca">🔥 8</span></div>
+      <div><button style="width:28px;height:28px;border-radius:7px;border:1.5px solid #e5e7eb;background:white;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center">🛡️</button></div>
+      <div style="display:flex;gap:6px">
+        <button style="padding:5px 11px;background:#ede9fe;color:#5b21b6;border:none;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer">📁 Archive</button>
+        <button style="padding:5px 9px;background:#fef2f2;color:#dc2626;border:none;border-radius:7px;font-size:12px;cursor:pointer">🗑️</button>
+      </div>
+    </div>
+    <!-- Row 2 - selected -->
+    <div style="display:grid;grid-template-columns:36px 1fr 70px 110px 80px 70px 34px 150px;gap:8px;align-items:center;background:#f5f3ff;border:1.5px solid #a5b4fc;border-radius:10px;padding:10px 16px">
+      <div><input type="checkbox" checked style="accent-color:#6366f1;cursor:pointer"/></div>
+      <div><div style="font-weight:700;color:#1e1b4b;font-size:13px">Amazon.in</div><div style="color:#9ca3af;font-size:11px">order-update@amazon.in</div></div>
+      <div style="font-weight:800;font-size:15px;color:#374151">312</div>
+      <div><span class="tag" style="background:#fffbeb;color:#d97706;border:1px solid #f59e0b33">🛒 Shopping</span></div>
+      <div><span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:700;background:#6366f118;color:#6366f1;border:1px solid #6366f144;max-width:84px;overflow:hidden"><span style="width:14px;height:14px;border-radius:50%;background:#6366f1;color:white;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:900;flex-shrink:0">S</span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">satyavenkat</span></span></div>
+      <div><span class="tag" style="background:#fef2f2;color:#dc2626;border:1px solid #fecaca">🔥 7</span></div>
+      <div><button style="width:28px;height:28px;border-radius:7px;border:1.5px solid #e5e7eb;background:white;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center">🛡️</button></div>
+      <div style="display:flex;gap:6px">
+        <button style="padding:5px 11px;background:#ede9fe;color:#5b21b6;border:none;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer">📁 Archive</button>
+        <button style="padding:5px 9px;background:#fef2f2;color:#dc2626;border:none;border-radius:7px;font-size:12px;cursor:pointer">🗑️</button>
+      </div>
+    </div>
+    <!-- Row 3 - normal with shield protected -->
+    <div style="display:grid;grid-template-columns:36px 1fr 70px 110px 80px 70px 34px 150px;gap:8px;align-items:center;background:white;border:1.5px solid transparent;border-radius:10px;padding:10px 16px;box-shadow:0 1px 4px rgba(0,0,0,.05)">
+      <div><input type="checkbox" style="accent-color:#6366f1;cursor:pointer"/></div>
+      <div><div style="font-weight:700;color:#1e1b4b;font-size:13px">HDFC Bank</div><div style="color:#9ca3af;font-size:11px">alerts@hdfcbank.net</div></div>
+      <div style="font-weight:800;font-size:15px;color:#374151">198</div>
+      <div><span class="tag" style="background:#ecfdf5;color:#059669;border:1px solid #10b98133">💰 Finance</span></div>
+      <div><span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:700;background:#6366f118;color:#6366f1;border:1px solid #6366f144;max-width:84px;overflow:hidden"><span style="width:14px;height:14px;border-radius:50%;background:#6366f1;color:white;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:900;flex-shrink:0">S</span><span>satyavenkat</span></span></div>
+      <div><span class="tag" style="background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0">✅ 2</span></div>
+      <div><button style="width:28px;height:28px;border-radius:7px;border:1.5px solid #6366f1;background:#eef2ff;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center">🛡️</button></div>
+      <div style="display:flex;gap:6px">
+        <button style="padding:5px 11px;background:#ede9fe;color:#5b21b6;border:none;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer">📁 Archive</button>
+        <button style="padding:5px 9px;background:#fef2f2;color:#dc2626;border:none;border-radius:7px;font-size:12px;cursor:pointer">🗑️</button>
+      </div>
+    </div>
+    <!-- Row 4 -->
+    <div style="display:grid;grid-template-columns:36px 1fr 70px 110px 80px 70px 34px 150px;gap:8px;align-items:center;background:white;border:1.5px solid transparent;border-radius:10px;padding:10px 16px;box-shadow:0 1px 4px rgba(0,0,0,.05)">
+      <div><input type="checkbox" style="accent-color:#6366f1;cursor:pointer"/></div>
+      <div><div style="font-weight:700;color:#1e1b4b;font-size:13px">Swiggy</div><div style="color:#9ca3af;font-size:11px">no-reply@swiggy.in</div></div>
+      <div style="font-weight:800;font-size:15px;color:#374151">156</div>
+      <div><span class="tag" style="background:#fffbeb;color:#d97706;border:1px solid #f59e0b33">🛒 Shopping</span></div>
+      <div><span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:700;background:#8b5cf618;color:#8b5cf6;border:1px solid #8b5cf644;max-width:84px;overflow:hidden"><span style="width:14px;height:14px;border-radius:50%;background:#8b5cf6;color:white;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:900;flex-shrink:0">W</span><span>work</span></span></div>
+      <div><span class="tag" style="background:#fef2f2;color:#dc2626;border:1px solid #fecaca">🔥 6</span></div>
+      <div><button style="width:28px;height:28px;border-radius:7px;border:1.5px solid #e5e7eb;background:white;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center">🛡️</button></div>
+      <div style="display:flex;gap:6px">
+        <button style="padding:5px 11px;background:#ede9fe;color:#5b21b6;border:none;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer">📁 Archive</button>
+        <button style="padding:5px 9px;background:#fef2f2;color:#dc2626;border:none;border-radius:7px;font-size:12px;cursor:pointer">🗑️</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>
