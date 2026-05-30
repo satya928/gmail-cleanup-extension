@@ -12,7 +12,7 @@ A Chrome Extension (Manifest V3) that scans your Gmail inbox, groups emails by s
 
 ## Privacy
 All email data is processed locally in your browser. No backend server, no analytics, no data collection.  
-→ [Full Privacy Policy](https://satyavenkat928.github.io/gmail-cleanup-extension/privacy-policy.html)
+→ [Full Privacy Policy](https://satya928.github.io/gmail-cleanup-extension/privacy-policy.html)
 
 ## Development
 

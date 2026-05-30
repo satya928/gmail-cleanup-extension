@@ -53,13 +53,13 @@ Productivity
 English (United States)
 
 ## Privacy policy URL
-https://satyavenkat928.github.io/gmail-cleanup-extension/privacy-policy.html
+https://satya928.github.io/gmail-cleanup-extension/privacy-policy.html
 
 ## Homepage URL
-https://github.com/satyavenkat928/gmail-cleanup-extension
+https://github.com/satya928/gmail-cleanup-extension
 
 ## Support URL
-https://github.com/satyavenkat928/gmail-cleanup-extension/issues
+https://github.com/satya928/gmail-cleanup-extension/issues
 
 ---
 
