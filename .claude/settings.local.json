@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(cp -r \"D:/gmail_cleanup_extension/dist/.\" \"D:/GmailCleanup/\")",
-      "Read(//d/GmailCleanup/**)",
-      "Bash(npm run *)"
-    ]
-  }
-}
